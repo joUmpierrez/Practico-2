@@ -7,8 +7,11 @@ public class Operadores
 	// Consola
 	public static void main(String[] args) 
 	{
-		/*
+		
 		// Ejercicio 1
+		System.out.println("Ejercicio 1 - Numeros Primos");
+		System.out.print("\n");
+		
 		System.out.println("Ingrese un numero");
 		int numeroA = entrada.nextInt();
 		System.out.print("\n");
@@ -20,40 +23,69 @@ public class Operadores
 		{
 			System.out.println("No es un numero primo");
 		}
+		System.out.print("-----------------------------------------");
 		System.out.print("\n");
 		
+		
 		// Ejercicio 2
+		System.out.println("Ejercicio 2 - Primo Mayor mas cercano");
+		System.out.print("\n");
+		
 		System.out.println("Ingrese un numero");
 		int numeroB = entrada.nextInt();
 		System.out.print("\n");
 		System.out.println("El proximo numero primo es: " + PrimoMasCercano(numeroB));
+		System.out.print("-----------------------------------------");
 		System.out.print("\n");
 		
+		
 		// Ejercicio 3
+		System.out.println("Ejercicio 3 - Dividir usando sumas y restas");
+		System.out.print("\n");
+		
 		System.out.println("Ingrese un numero");
 		int numeroC = entrada.nextInt();
 		System.out.println("Ingrese un numero");
 		int numeroD = entrada.nextInt();
 		System.out.print("\n");
 		RestoYCociente(numeroC, numeroD);
+		System.out.print("-----------------------------------------");
+		System.out.print("\n");
+		
 		
 		// Ejercicio 4
+		System.out.println("Ejercicio 4 - Calcular el Maximo Comun Divisor");
+		System.out.print("\n");
+		
 		System.out.println("Ingrese un numero");
 		int numeroE = entrada.nextInt();
 		System.out.println("Ingrese un numero");
 		int numeroF = entrada.nextInt();
 		System.out.print("\n");
 		System.out.print("El Maximo Comun Divisor (MCD) entre " + numeroE + " y " + numeroF + " es: " + CalcularMCD(numeroE,numeroF));
+		System.out.print("\n");
+		System.out.print("-----------------------------------------");
+		System.out.print("\n");
+		
 		
 		// Ejercicio 5
+		System.out.println("Ejercicio 5 - Simplificar Fracciones");
+		System.out.print("\n");
+		
 		System.out.println("Ingrese el numerador");
 		int numeroG = entrada.nextInt();
 		System.out.println("Ingrese el denominador");
 		int numeroH = entrada.nextInt();
 		System.out.print("\n");
 		SimplificarFraccion(numeroG, numeroH);
+		System.out.print("-----------------------------------------");
+		System.out.print("\n");
+		
 		
 		// Ejercicio 6
+		System.out.println("Ejercicio 6 - Determinar si un numero es Capicua");
+		System.out.print("\n");
+		
 		System.out.println("Ingrese un numero");
 		int numeroI = entrada.nextInt();
 		if (EsCapicua(numeroI))
@@ -66,13 +98,24 @@ public class Operadores
 			System.out.print("El numero " + numeroI + " no es Capicua");
 			System.out.print("\n");
 		}
-		
-		// Ejercicio 7
-		CapicuasDeCincoCifras();
+		System.out.print("-----------------------------------------");
 		System.out.print("\n");
 		
+		
+		// Ejercicio 7
+		System.out.println("Ejercicio 7 - Listar todos los Capicuas de 5 cifras");
+		System.out.print("\n");
+		
+		CapicuasDeCincoCifras();
+		System.out.print("-----------------------------------------");
+		System.out.print("\n");
+		
+		
 		// Ejercicio 8
-		// ---> Crearemos un vector con numeros aleatorios <---
+		System.out.println("Ejercicio 8 - Buscar el maximo del vector y su Posicion");
+		System.out.print("\n");
+		
+		// ---> Crearemos un vector con numeros aleatorios NO REPETITIVOS <---
 		int vector[] = CrearVectorAleatorioNoRepetitivo(100);
 		
 		// A)
@@ -122,17 +165,64 @@ public class Operadores
 		System.out.print("\n");
 		System.out.print("La posicion del maximo valor del vector aleatorio es: " + posicionMaximoDelVector);
 		System.out.print("\n");
-		*/
+		System.out.print("-----------------------------------------");
+		System.out.print("\n");
+		
+		
 		// Ejercicio 9
+		System.out.println("Ejercicio 9 - Ordenar un vector");
+		System.out.print("\n");
+		
+		// ---> Crearemos un vector con numeros aleatorios <---
+		int vectorC[] = CrearVectorAleatorio(30);
+		
+		Ordenar(vectorC);
+		Mostrar(vectorC);
+		System.out.print("-----------------------------------------");
+		System.out.print("\n");
+		
 		
 		// Ejercicio 10
-		//int vectorB[] = CrearVectorAleatorio(20);
+		System.out.println("Ejercicio 10 - Promedio de un Vector. Minima cantidad en el vector, su primera posicion y cuantas veces se repite");
+		
+		// ---> Crearemos un vector con numeros aleatorios <---
+		int vectorB[] = CrearVectorAleatorio(20);
+		
+		// A)
+		System.out.print("\n");
+		System.out.print("El promedio del vector es: " + PromedioDeVector(vectorB));
+		System.out.print("\n");
+		
+		// B)
+		MinimoDelVector(vectorB);
+		System.out.print("-----------------------------------------");
+		System.out.print("\n");
+		
 		
 		// Ejercicio 11
+		System.out.println("Ejercicio 11 - Ordenar y Sincronizar 2 vectores");
+		System.out.print("\n");
+		
+		// ---> Crearemos dos vectores con numeros aleatorios ORDENADOS <---
+		int vectorD[] = CrearVectorAleatorio(45);
+		int vectorE[] = CrearVectorAleatorio(11);
+		Ordenar(vectorD);
+		Ordenar(vectorE);
+		
+		int[] vectorConcatenado = UnirVectores(vectorD, vectorE);
+		Mostrar(vectorConcatenado);
+		System.out.print("-----------------------------------------");
+		System.out.print("\n");
 		
 		
 		// Ejercicio 12
+		System.out.println("Ejercicio 12 - Hallar los dos mayores numero de un vector");
+		System.out.print("\n");
 		
+		// ---> Crearemos un vector con numeros aleatorios <---
+		int vectorF[] = CrearVectorAleatorio(15);
+				
+		ObtenerLosDosMayores(vectorF);
 	}
 	
 	// Ejercicio 1
@@ -315,7 +405,7 @@ public class Operadores
 		return vectorAleatorio;
 	}
 	
-	// // Crear un vector con numeros aleatorios diferentes a 0
+	// Crear un vector con numeros aleatorios diferentes a 0
 	public static int[] CrearVectorAleatorio(int cantidadValores)
 	{
 		int vectorAleatorio[] = new int[cantidadValores];
@@ -360,7 +450,6 @@ public class Operadores
 		desde = Math.min(desde, hasta);
 		hasta = Math.max(desde, hasta);
 		int valorMaximo = MaximoDelVector(v, desde, hasta);
-		int e;
 		int i;
 		
 		for(i = desde; i <= hasta; i++)
@@ -375,7 +464,22 @@ public class Operadores
 	}
 
 	// Ejercicio 9
+	// Una funcion para mostrar los vectores
+	public static void Mostrar(int[] v)
+	{
+		int i;
+		int posicion = 1;
+		for(i = 0; i<v.length; i++)
+		{
+			System.out.println("Posicion N° " + posicion + " ----- " + v[i]);
+			posicion++;
+		}
+	}
 	
+	public static void Ordenar(int[] v)
+	{
+		Arrays.sort(v);
+	}
 	
 	// Ejercicio 10
 	// A)
@@ -395,11 +499,93 @@ public class Operadores
 	}
 	
 	// B)
-	
+	public static void MinimoDelVector(int[] v)
+	{
+		int minimo, repeticion, posicionPrimera, i, e, a;
+		boolean salir = false;
+		
+		e = 0;
+		minimo = 0;
+		repeticion = 0;
+		posicionPrimera = 0;
+		
+		for(i = 0; i<v.length; i++)
+		{
+			if(i == 0)
+			{
+				minimo = v[i];
+			}
+			else
+			{
+				if(v[i] < minimo)
+				{
+					minimo = v[i];
+				}
+			}
+		}
+		
+		for(a = 0; a<v.length; a++)
+		{
+			if(v[a] == minimo)
+			{
+				repeticion++;
+			}
+		}
+		
+		do
+		{
+			if(v[e] == minimo)
+			{
+				posicionPrimera = e;
+				salir = true;
+			}
+			else
+			{
+				e++;
+			}
+		}
+		while(!salir);
+		
+		System.out.print("El menor valor del arreglo es: " + minimo);
+		System.out.print("\n");
+		System.out.print("Se repite: " + repeticion + " veces");
+		System.out.print("\n");
+		System.out.print("La primera vez que aparece es en la posicion: " + posicionPrimera);
+		System.out.print("\n");
+	}
 			
 	// Ejercicio 11
-			
+	public static int[] UnirVectores(int[] vA, int[]vB)
+	{
+		int[] vectorC = new int[vA.length + vB.length];
+		
+		System.arraycopy(vA, 0, vectorC, 0, vA.length);
+		System.arraycopy(vB, 0, vectorC, vA.length, vB.length);
+		Ordenar(vectorC);
+		
+		return vectorC;
+	}
 			
 	// Ejercicio 12
-			
+	public static void ObtenerLosDosMayores(int[] v)
+	{
+		int mayorA = 0;
+		int mayorB = 0;
+		int i;
+		
+		mayorA = MaximoDelVector(v, 0, v.length-1);
+		
+		for(i = 0; i<v.length; i++)
+		{
+			if(v[i] > mayorB && v[i] != mayorA)
+			{
+				mayorB = v[i];
+			}
+		}
+		
+		System.out.print("El mayor valor del vector es: " + mayorA);
+		System.out.print("\n");
+		System.out.print("El segundo mayor valor del vector es: " + mayorB);
+		System.out.print("\n");
+	}
 }
